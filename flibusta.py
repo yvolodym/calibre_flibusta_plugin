@@ -42,4 +42,4 @@ class FlibustaStore(BasicStoreConfig, OpenSearchOPDSStore):
 #    def create_search_result(self, data):
 #		sRes = SearchResult()
 #		sRes.drm = SearchResult.DRM_UNLOCKED
-#		sRes.cover_data = 'http://opds-spec.org/thumbnail' . data.xpath('.//link[@rel="http://opds-spec.org/thumbnail"]/@href')
+#		sRes.cover_data = 'http://opds-spec.org/thumbnail'.join(data.xpath('.//link[@rel="http://opds-spec.org/thumbnail"]/@href'))
